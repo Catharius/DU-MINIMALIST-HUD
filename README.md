@@ -41,8 +41,14 @@ Disclaimer : This is an early build, you may encounter some hud positionning pro
 * damagereport_txt_posy : Damage text position from the top side of the HUD 
 * damagereport_txt_priority : Show damaged components (3) Below 100%, (2) Below 75%, (1) Below 50%
 * damagereport_refresh_rate : Damage report refresh rate every x seconds (useful if you have performance issues) 
+### Filters
+You can use alt+1 (option1) to switch between filter modes
+* ALL : Show all elements below 75% by default (You can adjust using the damagereport_txt_priority parameter)
+* WP & AV : Show only weapons & avionics elements
+* AVIONICS  : Show only avionics components (Wings, adjustors, vertical boosters, engines, fuel tanks, etc..)
+* WEAPONS : Show only weapons
 
-
+The dynamic core unit and resurection nodes will always be visible no matter what filter you have selected since they are really important.
 
 ## Lua scripting
 
