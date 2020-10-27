@@ -21,3 +21,26 @@ Disclaimer : This is an early build, you may encounter some hud positionning pro
 ## Fuel module
 
 ## Damage Report module
+
+## Lua scripting
+
+### Fuel module script
+Create a new fuel module :
+```lua
+fuel_module = FuelModule.new()
+```
+Get the html code of the module
+```lua
+fuel_html=fuel_module:renderHTML()
+```
+
+### Damage report module script
+Create a new damage report module :
+```lua
+damage_html = DamageModule.new()
+```
+Get the html code of the module
+```lua
+damage_html=damage_rep:renderHTML()
+```
+
