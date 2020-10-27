@@ -12,6 +12,8 @@ Features :
 
 How to use this script :
 * You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
+* Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
+* Ingame, just right click on your piloting seat then go to advanced/run custom autoconfigure and select "minimalistic hud"
 * You can also copy paste the code into a programming board to make an onboard HUD for your crew (Useful for reparations and refueling in PVP)
 * For advanced lua coders : A function "renderHTML" will allow you to get an html string of the hud (position:absolute should allow for easy positionning)
 
