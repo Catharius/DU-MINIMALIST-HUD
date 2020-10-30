@@ -1,6 +1,8 @@
 # DU-MINIMALIST-HUD
 Hud project for Dual Universe with a fuel tank monitor and a damage report system
 
+![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_all.jpg)
+
 Features :
 * Hide default fuel widgets if script is installed via autoconf
 * Add a fuel tank monitor in the top left corner of the hud
@@ -18,7 +20,6 @@ Features :
 * More explicit lua parameters
 * Hud rotation gone for now
 * For advanced users, renderHTML() will now return an array with all hud elements separated, default css can be obtained via renderCSS()
-![hudimage](https://cdn.discordapp.com/attachments/761286504886173766/770416098264219658/unknown.png)
 
 How to use this script :
 * You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
