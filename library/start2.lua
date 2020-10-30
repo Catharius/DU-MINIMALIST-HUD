@@ -2,11 +2,11 @@
 -- FUEL MODULE
 -------------------
 -- LUA Parameters
-fuel_module_active = true --export: Enable the fuel module
-fuel_module_posx = 1 --export: Fuel module position from the left of the HUD
-fuel_module_posy = 0 --export: Fuel module position from the top side of the HUD
-fuel_module_refresh_rate = 0.25 --export: Fuel module refresh rate every x seconds
-fuel_module_show_remaining_time = 10 --export: If fuel is lasting more than x hours, do not show remaining time, 0 to always show remaining time
+MINHUD_show_fuel = true --export: Enable the fuel module
+MINHUD_fuel_left_position = 1 --export: Fuel module position from the left of the HUD
+MINHUD_fuel_top_position = 0 --export: Fuel module position from the top side of the HUD
+MINHUD_fuel_refresh_rate = 0.25 --export: Fuel module refresh rate every x seconds
+MINHUD_fuel_show_remaining_time = 10 --export: If fuel is lasting more than x hours, do not show remaining time, 0 to always show remaining time
 
 -------------------
 -- FUEL CLASS
@@ -52,7 +52,7 @@ function FuelModule.computeData(self,fuel_tank)
                 -- To avoid useless infos we show only if we have 99 days of autonomy
                 if days < 99 then                   
                     local truehours = tonumber(obj.timeLeft) // 3600
-                    if (fuel_module_show_remaining_time==0 or fuel_module_show_remaining_time>=truehours) then
+                    if (MINHUD_fuel_show_remaining_time==0 or MINHUD_fuel_show_remaining_time>=truehours) then
                         if days > 0 then
                             fuel_time_to_empty = " | "..tonumber(string.format("%."..(0).."f",days)).."d:"..tonumber(string.format("%."..(0).."f",hours)).."h:"..tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"  
                         elseif hours>0 then
@@ -71,9 +71,9 @@ function FuelModule.computeData(self,fuel_tank)
 end
 
 function FuelModule.renderHTML(self)
-    if fuel_module_active == true then
+    if MINHUD_show_fuel == true then
         -- Limiting refresh
-        if system.getTime() > self.last_time_updated + fuel_module_refresh_rate then
+        if system.getTime() > self.last_time_updated + MINHUD_fuel_refresh_rate then
             self.last_time_updated = system.getTime()
             -- CSS           
             self.html = [[
@@ -96,8 +96,8 @@ function FuelModule.renderHTML(self)
         }
             .fuelmodule {
             position:absolute;
-            top:]]..fuel_module_posy..[[px;
-            left:]]..fuel_module_posx..[[px;
+            top:]]..MINHUD_fuel_top_position..[[px;
+            left:]]..MINHUD_fuel_left_position..[[px;
         }
             </style>
             <div class="fuelmodule">
