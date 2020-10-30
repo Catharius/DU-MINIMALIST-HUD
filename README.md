@@ -5,7 +5,7 @@ Hud project for Dual Universe with a fuel tank monitor and a damage report syste
 ![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_av.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
-
+![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/ship_view.jpg)
 
 Features :
 * Hide default fuel widgets if script is installed via autoconf
