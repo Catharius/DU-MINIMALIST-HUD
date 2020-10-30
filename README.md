@@ -29,14 +29,13 @@ Hud project for Dual Universe with a fuel tank monitor and a damage report syste
 * You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
 * Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
 * Ingame, just right click on your piloting seat then go to advanced/run custom autoconfigure and select "minimalistic hud"
-
 * You can also copy/paste the content of hud_on_programming_board.json and paste it on a programming board linked to your dynamic core. Using the board will show the hud on your screen so you can repair stuff, use alt + 3 to exit the hud
 
 **My todo list for the next versions:**
 * Show the ship layout outside of the hud  on a screen for example
 * Cockpit version of the hud
 * Full screen mode with elements names on the ship layout
-* Repair Station mode for the repair crew
+* Repair Station mode for the repair crew (You can already use the hud an move outside of your ship, see instructions in "how to use this script")
 
 Disclaimer : This is an early build, you may encounter some hud positionning problems (Large core not tested yet). if so, you can adjust all parameters from the lua parameter menu on your piloting seat
 
