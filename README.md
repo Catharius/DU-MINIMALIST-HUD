@@ -7,7 +7,7 @@ Hud project for Dual Universe with a fuel tank monitor and a damage report syste
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/ship_view.jpg)
 
-Features :
+**Features :**
 * Hide default fuel widgets if script is installed via autoconf
 * Add a fuel tank monitor in the top left corner of the hud
 * Add a ship layout based on the real position of your elements on your dynamic core, switch views by using option 2 key (ALT+2 by default)
@@ -16,7 +16,7 @@ Features :
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
-30/10/2020 : 
+**30/10/2020 :**
 * Easier hud positioning
 * You can now switch between top view, front view and side view !
 * A label has been added under the ship layout
@@ -25,12 +25,14 @@ Features :
 * Hud rotation gone for now
 * For advanced users, renderHTML() will now return an array with all hud elements separated, default css can be obtained via renderCSS()
 
-How to use this script :
+**How to use this script :**
 * You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
 * Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
 * Ingame, just right click on your piloting seat then go to advanced/run custom autoconfigure and select "minimalistic hud"
 
-My todo list for the next versions:
+* You can also copy/paste the content of hud_on_programming_board.json and paste it on a programming board linked to your dynamic core. Using the board will show the hud on your screen so you can repair stuff, use alt + 3 to exit the hud
+
+**My todo list for the next versions:**
 * Show the ship layout outside of the hud  on a screen for example
 * Cockpit version of the hud
 * Full screen mode with elements names on the ship layout
