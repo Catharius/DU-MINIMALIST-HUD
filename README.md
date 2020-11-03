@@ -35,7 +35,7 @@ Hud project for Dual Universe with a fuel tank monitor and a damage report syste
 * Show the ship layout outside of the hud  on a screen for example
 * Cockpit version of the hud
 * Full screen mode with elements names on the ship layout
-* Repair Station mode for the repair crew (You can already use the hud an move outside of your ship, see instructions in "how to use this script")
+* Repair Station mode for the repair crew (You can already use the hud and move outside of your ship, see instructions in "how to use this script", do not forget to link the core to your programming board)
 
 Disclaimer : This is an early build, you may encounter some hud positionning problems (Large core not tested yet). if so, you can adjust all parameters from the lua parameter menu on your piloting seat
 
