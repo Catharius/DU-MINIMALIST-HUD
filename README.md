@@ -1,8 +1,8 @@
 # DU-MINIMALIST-HUD
-Hud project for Dual Universe with a fuel tank monitor and a damage report system
+Hud project for Dual Universe with a fuel tank monitor, a small warp panel and a damage report system
 
+![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
 ![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_all.jpg)
-![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_av.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/ship_view.jpg)
