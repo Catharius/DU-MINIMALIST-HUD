@@ -18,6 +18,20 @@ function FuelModule.new()
     local self = setmetatable({}, FuelModule)
     self.html = ""
     self.last_time_updated = 0
+    if MINHUD_show_fuel == true then
+	   if standard_atmo_fuel_module ~= nil then
+         	system.destroyWidgetPanel(standard_atmo_fuel_module)
+             standard_atmo_fuel_module = nil
+        end
+        if standard_space_fuel_module ~= nil then
+         	system.destroyWidgetPanel(standard_space_fuel_module)
+             standard_space_fuel_module = nil
+        end
+        if standard_rocket_fuel_module ~= nil then
+         	system.destroyWidgetPanel(standard_rocket_fuel_module)
+             standard_rocket_fuel_module = nil
+        end
+    end
     return self
 end
 
