@@ -54,7 +54,8 @@ function WarpModule.renderHTML(self)
                 self.html = [[
                 <style>
                 .warp_mod {
-                width: 8vw;  
+                padding:5px;
+                width: 9vw;  
                 font-weight:bold;
                 background-color: rgba(0, 0, 0, .4);
                 position:absolute;
