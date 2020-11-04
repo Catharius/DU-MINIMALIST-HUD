@@ -14,7 +14,7 @@ MINHUD_top_position = 180 --export: change the top position of the ship layout (
 MINHUD_label_position = 0 --export: move the view label left or right (useful for centering)
 
 MINHUD_txt_module_left_pos = 1 --export:  change the left position of the ship layout (Increase to move right)   
-MINHUD_txt_module_top_pos = 120 --export: change the top position of the ship layout (Increase to move down)
+MINHUD_txt_module_top_pos = 200 --export: change the top position of the ship layout (Increase to move down)
 
 
 MINHUD_dmg_refresh_rate = 0.25 --export: Damage report refresh rate every x seconds
