@@ -6,6 +6,7 @@
 
 -- minimalistic hud
 fuel_html=fm:renderHTML()
+warp_html=wm:renderHTML()
 damage_html=dmgrep:renderHTML()
 damage_css=dmgrep:renderCSS()
 -- Show the selected view
@@ -14,4 +15,4 @@ txt_view = ""
 if MINHUD_show_txt_module == true then
 txt_view=damage_html[4]
 end
-system.setScreen(fuel_html..damage_css..damage_html[i]..txt_view)
+system.setScreen(fuel_html..warp_html..damage_css..damage_html[i]..txt_view)
