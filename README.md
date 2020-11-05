@@ -1,21 +1,32 @@
 # DU-MINIMALIST-HUD
-Hud project for Dual Universe with a fuel tank monitor, a small warp panel and a damage report system
+
+A minimalist hud project for the game "Dual Universe"
 
 ![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
-![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_all.jpg)
-![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
+![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
-![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/ship_view.jpg)
 
-**Features :**
-* Hide default fuel widgets if script is installed via autoconf
+## How to use this script
+* You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
+  * Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
+  * Ingame, just right click on your piloting seat then go to advanced/run custom autoconfigure and select "minimalistic hud"
+* You can also copy/paste the content of hud_on_programming_board.json and paste it on a programming board linked to your dynamic core. Using the board will show the hud on your screen, you will be able to move and use the repair tool
+
+## Features
 * Add a fuel tank monitor in the top left corner of the hud
-* Add a ship layout based on the real position of your elements on your dynamic core, switch views by using option 2 key (ALT+2 by default)
-* Available views are TOP, FRONT and SIDE
-* Elements can be filtered (ALL,WEAPONS AND AVIONICS,AVIONICS ONLY,WEAPONS ONLY) by using option 1 key (ALT+1 by default)
+* Add a warp monitor if a warp drive is installed
+* Add a ship layout based on the real position of your elements on your dynamic core
+  * You can switch views by using option 2 key (ALT+2 by default)
+  * Available views are TOP, FRONT and SIDE
+  * Elements can be filtered (ALL,WEAPONS AND AVIONICS,AVIONICS ONLY,WEAPONS ONLY) by using option 1 key (ALT+1 by default)
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
+**05/11/2020 :**
+* New warp module added
+* Added Radar as a critical component
+* Fixed a bug with weapons not showing up in the display
+
 **30/10/2020 :**
 * Easier hud positioning
 * You can now switch between top view, front view and side view !
@@ -25,13 +36,9 @@ Hud project for Dual Universe with a fuel tank monitor, a small warp panel and a
 * Hud rotation gone for now
 * For advanced users, renderHTML() will now return an array with all hud elements separated, default css can be obtained via renderCSS()
 
-**How to use this script :**
-* You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
-* Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
-* Ingame, just right click on your piloting seat then go to advanced/run custom autoconfigure and select "minimalistic hud"
-* You can also copy/paste the content of hud_on_programming_board.json and paste it on a programming board linked to your dynamic core. Using the board will show the hud on your screen so you can repair stuff, use alt + 3 to exit the hud
+**----------------------------------**
 
-**My todo list for the next versions:**
+**My todo list :**
 * Show the ship layout outside of the hud  on a screen for example
 * Cockpit version of the hud
 * Full screen mode with elements names on the ship layout
@@ -39,7 +46,7 @@ Hud project for Dual Universe with a fuel tank monitor, a small warp panel and a
 
 Disclaimer : This is an early build, you may encounter some hud positionning problems (Large core not tested yet). if so, you can adjust all parameters from the lua parameter menu on your piloting seat
 
-## Fuel module
+## About the fuel module
 ### List of lua parameters
 * **MINHUD_show_fuel** : enable the fuel module
 * **MINHUD_fuel_left_position** : fuel module position from the left side of the HUD
@@ -47,7 +54,7 @@ Disclaimer : This is an early build, you may encounter some hud positionning pro
 * **MINHUD_fuel_refresh_rate** : fuel module refresh rate every x seconds (useful if you have performance issues) 
 * **MINHUD_fuel_show_remaining_time** : if fuel is lasting more than x hours, do not show remaining time, 0 to always show remaining time. It shows 10 hours by default.
 
-## Damage Report module
+## About the damage report module
 ### List of lua parameters
 #### Functionalities
 * **MINHUD_show_labels** : show/hide view labels
@@ -82,6 +89,13 @@ The dynamic core unit and resurection nodes will always be visible no matter wha
 
 If you do not have elements of one view, like no weapons for example the view will be hidden until you switch to another view.
 
+## About the warp module
+### List of lua parameters
+* **MINHUD_show_warp** : enable the warp module
+* **MINHUD_warp_left_position** : warp module position from the left side of the HUD
+* **MINHUD_warp_top_position** : warp module position from the top side of the HUD
+* **MINHUD_warp_refresh_rate** : warp module refresh rate every x seconds (useful if you have performance issues) 
+
 ## Lua scripting
 
 ### Fuel module script
@@ -92,6 +106,15 @@ fuel_module = FuelModule.new()
 Get the html code of the module
 ```lua
 fuel_html=fuel_module:renderHTML()
+```
+### Warp module script
+Create a new warp module :
+```lua
+warp_module = WarpModule.new()
+```
+Get the html code of the module
+```lua
+warp_html=warp_module:renderHTML()
 ```
 
 ### Damage report module script
