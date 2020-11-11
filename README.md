@@ -6,6 +6,8 @@ A minimalist hud project for the game "Dual Universe"
 ![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
 
+Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-REPORT)
+
 ## How to use this script
 * You can use the autoconf to make a clean installation of the hud on a piloting seat (Cockpit not supported yet)
   * Download minimalistic_hud.conf and copy paste it in your \Dual Universe\Game\data\lua\autoconf\custom
