@@ -28,9 +28,9 @@ end
 function getElemCategory(elemtype)
     elem_category="UNKNOWN"
     if elemtype ~= nil then
-        local critical_part_list = {"DYNAMIC CORE","RESURRECTION NODE","RADAR","WARPDRIVE"}   
+        local critical_part_list = {"DYNAMIC CORE","RESURRECTION NODE","RADAR","GUNNER MODULE","COMMAND SEAT CONTROLLER","COCKPIT"}   
         local avionics_part_list = {"ENGINE","FUEL-TANK","ADJUSTOR","VERTICAL BOOSTER","RETRO-ROCKET BRAKE","WING","ATMOSPHERIC AIRBRAKE"}
-        local weapon_part_list = {"GUNNER MODULE","LASER","COMMAND SEAT CONTROLLER","COCKPIT","CANNON","MISSILE","RAILGUN"}   
+        local weapon_part_list = {"LASER","CANNON","MISSILE","RAILGUN"}
         -- CRITICALS
         for _,reftype in ipairs(critical_part_list) do
             if string.match(elemtype, reftype) then
