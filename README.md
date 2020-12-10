@@ -2,7 +2,6 @@
 
 A minimalist hud project for the game "Dual Universe"
 
-![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
 ![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
 
@@ -24,6 +23,9 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
+**10/12/2020 :**
+* New warp module deactivated for now due to lua activateWarp nerf...
+* Fixed a bug that made a single dot that was a displaced element
 **05/11/2020 :**
 * New warp module added
 * Added Radar as a critical component
