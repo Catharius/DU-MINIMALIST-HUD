@@ -23,6 +23,8 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
+**16/12/2020 :**
+* Warp module active again...
 **10/12/2020 :**
 * New warp module deactivated for now due to lua activateWarp nerf...
 * Fixed a bug that made a single dot that was a displaced element
