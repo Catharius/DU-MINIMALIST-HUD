@@ -2,7 +2,7 @@
 -- WARP MODULE
 -------------------
 -- LUA Parameters
-MINHUD_show_warp = false --export: Enable the warp module
+MINHUD_show_warp = true --export: Enable the warp module
 MINHUD_warp_left_position = 1--export: Warp module position from the left of the HUD
 MINHUD_warp_top_position = 120 --export: Warp module position from the top side of the HUD
 MINHUD_warp_refresh_rate = 0.25 --export: Warp module refresh rate every x seconds
