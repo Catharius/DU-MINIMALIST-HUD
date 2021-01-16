@@ -5,6 +5,7 @@ A minimalist hud project for the game "Dual Universe"
 ![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
 ![hudimage2](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/top_front.jpg)
 ![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/side_av.jpg)
+![hudimage3](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/wp%20module.jpg)
 
 Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-REPORT)
 
