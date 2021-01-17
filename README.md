@@ -18,6 +18,7 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 ## Features
 * Add a fuel tank monitor in the top left corner of the hud
 * Add a warp monitor if a warp drive is installed
+* Add a weapon stats and hit chances if a weapon is installed on the seat
 * Add a ship layout based on the real position of your elements on your dynamic core
   * You can switch views by using option 2 key (ALT+2 by default)
   * Available views are TOP, FRONT and SIDE
@@ -25,6 +26,8 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
+**17/01/2021 :**
+* Weapon module added, allow you to monitor your remaining ammo, when to reload, what you are shooting at.
 **16/12/2020 :**
 * Warp module active again...
 **10/12/2020 :**
@@ -47,10 +50,8 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 **----------------------------------**
 
 **My todo list :**
-* Show the ship layout outside of the hud  on a screen for example
 * Cockpit version of the hud
 * Full screen mode with elements names on the ship layout
-* Repair Station mode for the repair crew (You can already use the hud and move outside of your ship, see instructions in "how to use this script", do not forget to link the core to your programming board)
 
 Disclaimer : This is an early build, you may encounter some hud positionning problems (Large core not tested yet). if so, you can adjust all parameters from the lua parameter menu on your piloting seat
 
@@ -104,6 +105,16 @@ If you do not have elements of one view, like no weapons for example the view wi
 * **MINHUD_warp_top_position** : warp module position from the top side of the HUD
 * **MINHUD_warp_refresh_rate** : warp module refresh rate every x seconds (useful if you have performance issues) 
 
+## About the weapon module
+### List of lua parameters
+* **MINHUD_show_weapon** : enable the weapon module
+* **MINHUD_weapon_refresh_rate** : weapon module refresh rate every x seconds (useful if you have performance issues) 
+### What it does
+The weapon module will show you the XS weapons linked to your seat. It will give you the name of the weapon, the ammo type loaded in it and the ammo count. 
+* It will tell you to reload when needed
+* When a target is set it will give you the name, the size (XS,S,M,L) and the distance between you and the target
+* A hit chance percentage will show up, a color will help you determine the hit chance (75%->100% : Green,50%->75% : Yellow, 35%->50% : Orange, <35% : Red)
+
 ## Lua scripting
 
 ### Fuel module script
@@ -123,6 +134,15 @@ warp_module = WarpModule.new()
 Get the html code of the module
 ```lua
 warp_html=warp_module:renderHTML()
+```
+### Weapon module script
+Create a new warp module :
+```lua
+weapon_module = WeaponModule.new()
+```
+Get the html code of the module
+```lua
+weapon_html=weapon_module:renderHTML()
 ```
 
 ### Damage report module script
