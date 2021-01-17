@@ -139,7 +139,7 @@ Get the html code of the module
 warp_html=warp_module:renderHTML()
 ```
 ### Weapon module script
-Create a new warp module :
+Create a new weapon module :
 ```lua
 weapon_module = WeaponModule.new()
 ```
