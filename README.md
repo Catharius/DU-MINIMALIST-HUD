@@ -28,11 +28,14 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 ## Patch note
 **17/01/2021 :**
 * Weapon module added, allow you to monitor your remaining ammo, when to reload, what you are shooting at.
+
 **16/12/2020 :**
 * Warp module active again...
+
 **10/12/2020 :**
 * New warp module deactivated for now due to lua activateWarp nerf...
 * Fixed a bug that made a single dot that was a displaced element
+
 **05/11/2020 :**
 * New warp module added
 * Added Radar as a critical component
