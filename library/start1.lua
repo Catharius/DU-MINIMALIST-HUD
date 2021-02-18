@@ -9,8 +9,8 @@ MINHUD_show_txt_module = true --export: enable the ship damage text report
 MINHUD_dmg_priority = 2 --export: Show damaged components (3) Below 100%, (2) Below 75%, (1) Below 50%
 
 MINHUD_size_ratio = 1 --export: change the size of the ship layout, use positive or negative numbers
-MINHUD_left_position = 5 --export: change the left position of the ship layout (Increase to move right)
-MINHUD_top_position = 180 --export: change the top position of the ship layout (Increase to move down)
+MINHUD_top_position = 5 --export: change the left position of the ship layout (Increase to move right)
+MINHUD_left_position = 180 --export: change the top position of the ship layout (Increase to move down)
 MINHUD_label_position = 0 --export: move the view label left or right (useful for centering)
 
 MINHUD_txt_module_left_pos = 1 --export:  change the left position of the ship layout (Increase to move right)   
@@ -230,8 +230,8 @@ function DamageModule.renderCSS(self)
 } 
     .view {
     position:absolute;
-    top:]]..MINHUD_left_position..[[px;
-    left:]]..MINHUD_top_position..[[px;
+    top:]]..MINHUD_top_position..[[px;
+    left:]]..MINHUD_left_position..[[px;
 }
     .dmgdotlabel {
     width:100%;
