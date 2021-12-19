@@ -1,5 +1,7 @@
 # DU-MINIMALIST-HUD
 
+WARNING : This script is now deprecated and will not work with the current version of Dual Universe.
+
 A minimalist hud project for the game "Dual Universe"
 
 ![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
