@@ -66,7 +66,7 @@ function WarpModule.renderHTML(self)
             }
                 </style>
                 ]]
-                self.html = self.html..[[<div class="warp_mod"><div>]]..obj.buttonMsg..[[</div><div style="background-color:red;color:white">]]..obj.errorMsg..[[</div><div>Dest : ]]..obj.destination..[[</div><div>Dist : ]]..getDistanceDisplayString(obj.distance)..[[</div><div>Cells : ]]..obj.cellCount..[[</div></div>]]
+                self.html = self.html..[[<div class="warp_mod"><div>]]..hint..[[</div><div>Dest : ]]..obj.destination..[[</div><div>Dist : ]]..getDistanceDisplayString(obj.distance)..[[</div><div>Cells : ]]..obj.cellCount..[[</div></div>]]
             end
         end    
     end

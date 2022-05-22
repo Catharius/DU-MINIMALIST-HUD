@@ -1,7 +1,5 @@
 # DU-MINIMALIST-HUD
 
-WARNING : This script is now deprecated and will not work with the current version of Dual Universe.
-
 A minimalist hud project for the game "Dual Universe"
 
 ![hudimage](https://raw.githubusercontent.com/Catharius/DU-MINIMALIST-HUD/main/images/warp_mod.jpg)
@@ -28,6 +26,10 @@ Screen version available [here](https://github.com/Catharius/DU-SIMPLE-DAMAGE-RE
 * Add a damage report list on the left of the hud when something is damaged
 
 ## Patch note
+**22/05/2022 :**
+* Warp module no longer trigger a script error
+* Use the new default auto conf as base for the new minimalistic hud auto conf, you should have docking and shield widgets now
+
 **17/01/2021 :**
 * Weapon module added, allow you to monitor your remaining ammo, when to reload, what you are shooting at.
 
